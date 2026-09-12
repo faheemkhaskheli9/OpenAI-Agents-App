@@ -1,0 +1,11 @@
+[project]
+name = "openai-agents-app"
+version = "0.1.0"
+description = "Multi-agent orchestration demo built on the OpenAI Agents SDK (tool use, handoffs, guardrails)"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
