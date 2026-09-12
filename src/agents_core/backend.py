@@ -97,8 +97,8 @@ class OpenAIBackend(BaseBackend):
 
 
 #: Registry of backend name -> implementation class. Extend by adding an
-#: entry here (see CLAUDE.md rule 13: this stays a mapping, not one field
-#: per known backend) rather than branching in `get_backend`.
+#: entry here (this stays a mapping, not one field per known backend)
+#: rather than branching in `get_backend`.
 _REGISTRY: dict[str, type[BaseBackend]] = {
     FakeBackend.name: FakeBackend,
     OpenAIBackend.name: OpenAIBackend,
