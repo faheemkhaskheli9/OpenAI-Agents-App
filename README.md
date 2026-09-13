@@ -113,8 +113,10 @@ example data used by the demo tool(s) is synthetic/public.
 ## 9. Training / Execution
 
 ```bash
-# Once Phase 2 lands:
 python -m agents_core.run --prompt "example request"
+# Phase 1: runs against a single placeholder "default" agent (fake backend
+# by default) -- no triage or specialist handoff yet, that's Phase 2.
+python -m agents_core.run --prompt "example request" --trace   # also print the run trace
 ```
 
 ## 10. Evaluation
